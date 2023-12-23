@@ -7,9 +7,9 @@ public class MainOrador {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Orador nuevoOrador = new Orador("jhiasmani", "chavez", 
+		Orador nuevoOrador = new Orador("Israel", "Diaz", 
 				                         "miemail@gmail.com", 
-				                         "Arduino", LocalDate.now());
+				                         "Lineas de tension alta", LocalDate.now());
 		
 		System.out.println(nuevoOrador);
 	

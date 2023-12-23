@@ -49,7 +49,7 @@ public class Orador {
 		//cambiar un metod llamadotoString() de la clase object
 				//y ver mejor los datos en la consola
 		
-		@Override
+	
 		public String toString() {
 			return "Orador [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", mail=" + mail + ", tema="
 					+ tema + ", fechaAlta=" + fechaAlta + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
@@ -75,7 +75,13 @@ public class Orador {
 		}
 
 		public void setNombre(String nombre) {
-			this.nombre = nombre;
+			
+			if(nombre != null) { 
+				this.nombre = nombre;
+			}else {
+				this.nombre = "N/D";
+				
+			}
 		}
 
 		public String getApellido() {
@@ -108,6 +114,11 @@ public class Orador {
 
 		public void setFechaAlta(LocalDate fechaAlta) {
 			this.fechaAlta = fechaAlta;
+		}
+
+		public void setId(Long id) {
+			
+			this.id=id;
 		}
 		
 		
